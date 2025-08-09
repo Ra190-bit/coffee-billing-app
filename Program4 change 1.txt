@@ -34,13 +34,14 @@ namespace ConsoleApplication
                 }
 
                 // Input If The Customer Is A Reseller
-                Console.Write("Is Customer A Reseller? (y/Y For Yes): ");
-                choice = Console.ReadLine().ToLower()[0];
-                bool isReseller = false;
-                if (choice == 'y')
-                {
-                    isReseller = true;
-                }
+                Console.Write("Is Customer A Reseller? (y/n): ");
+string resellerInput = Console.ReadLine().Trim().ToLower();
+while (string.IsNullOrEmpty(resellerInput) || (resellerInput[0] != 'y' && resellerInput[0] != 'n'))
+{
+    Console.Write("Please enter y or n: ");
+    resellerInput = Console.ReadLine().Trim().ToLower();
+}
+bool isReseller = resellerInput[0] == 'y';
 
 
                 // Compute Bill
