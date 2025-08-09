@@ -1,0 +1,18 @@
+# Coffee Billing Console App
+
+Calculates coffee bag cost using tiered pricing and optional reseller discount.
+
+## How to Run
+1) Open in Visual Studio / VS Code.
+2) Build and run.
+3) Enter customer name, bags (1–200), and reseller (y/n).
+
+## Pricing
+- 1–5 bags: $36.00 each
+- 6–15 bags: $34.50 each
+- 16+ bags: $32.70 each
+- Reseller discount: 20%
+
+## Recent Changes
+- Shows unit price and bill timestamp
+- Validates reseller input (y/n)
